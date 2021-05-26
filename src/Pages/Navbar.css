@@ -1,0 +1,13 @@
+.fa-shopping-cart,
+.fa-user,
+.fa-search {
+	font-size: 18px;
+	border-radius: 50%;
+	padding: 8px;
+	color: black;
+}
+
+.navbar {
+	font-family: 'Nunito Sans', sans-serif;
+	color: black !important;
+}

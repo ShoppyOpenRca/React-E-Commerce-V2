@@ -1,0 +1,27 @@
+.Header{
+    background-color: #FAFAFF;
+}
+.title{
+    color: #152059;
+    /* font-size: 20px; */
+}
+.button{
+    background-color: #132064;
+    color: white;
+}
+header{
+  height: 100%;
+}
+.footer{
+    background-color: #000000;
+}
+.social-info{
+color: white !important;
+}
+p{
+    font-size: 14px;
+}
+.one:hover{
+    transition: 0.5s;
+    transform: rotate(360deg);
+}
