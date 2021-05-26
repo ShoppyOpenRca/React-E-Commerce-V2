@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import '../styles/Header.css';
 const Footer = () => {
     return (
         <div className="footer pt-3 text-white footer-widget">

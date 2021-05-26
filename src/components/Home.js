@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import NavWrapper from './NavWrapper';
-import './Arrivals.css';
-import '../Pages/Navbar.css';
+import '../styles/Arrivals.css';
+import '../styles/Navbar.css';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
 

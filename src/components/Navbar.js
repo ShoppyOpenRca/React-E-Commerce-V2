@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 import logo from "../Shopy.svg";
 import styled from "styled-components";
-import '../Pages/Navbar.css';
+import '../styles/Navbar.css';
 
 export default class Navbar extends Component {
   render() {

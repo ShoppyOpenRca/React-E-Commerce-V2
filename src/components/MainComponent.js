@@ -12,6 +12,8 @@ import Default from './Default';
 import Cart from '../Cart/Cart';
 import CartContext from '../context/cartContext';
 import ArrivalMenu from './Arrivals';
+import About from './about';
+import Contact from './contact';
 
 const mapStateToProps = state => {
     return {
@@ -68,8 +70,8 @@ class Main extends Component {
                         <Route exact path='/arrivals' component={() => <ArrivalMenu arrivals={this.props.arrivals} />} />
                         <Route path="/details" component={Details} />
                         <Route path="/cart" component={Cart} />
-                        {/* <Route path="/about" component={Details} />
-                        <Route path="/contact" component={Cart} /> */}
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
                         <Route component={Default} />
                         <Redirect to="/home" />
                     </Switch>

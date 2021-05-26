@@ -1,0 +1,14 @@
+.line {
+    position:relative;
+    display:inline-block;
+}
+.line:after {
+    content:'';
+    position:absolute;
+    left:0; right:0;
+    top:100%;
+    margin-left:3px;
+    width:51%;
+    height:5px;
+    background:#132064;
+}
