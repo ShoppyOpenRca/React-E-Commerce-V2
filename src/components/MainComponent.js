@@ -8,10 +8,8 @@ import Navbar from './Navbar';
 import { connect } from 'react-redux';
 import { fetchArrivals, fetchProducts, fetchCategories } from '../redux/ActionCreators';
 import ProductList from './ProductList';
-import Default from './Default';
 import Cart from '../Cart/Cart';
 import CartContext from '../context/cartContext';
-import ArrivalMenu from './Arrivals';
 import About from './about';
 import Contact from './contact';
 
@@ -53,9 +51,6 @@ class Main extends Component {
                         product={this.props.products.products.filter((product) => product.featured)[0]}
                         productLoading={this.props.products.isLoading}
                         productErrMess={this.props.products.errMess}
-                        categories={this.props.categories}
-                        categoryLoading={this.props.categories.isLoading}
-                        categoryErrMess={this.props.categories.errMess}
                     />
                 </div>
             );
@@ -67,12 +62,10 @@ class Main extends Component {
                     <Switch>
                         <Route path='/home' component={HomePage} />
                         <Route exact path="/shop" component={ProductList} />
-                        <Route exact path='/arrivals' component={() => <ArrivalMenu arrivals={this.props.arrivals} />} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/contact" component={Contact} />
                         <Route path="/details" component={Details} />
                         <Route path="/cart" component={Cart} />
-                        <Route path="/about" component={About} />
-                        <Route path="/contact" component={Contact} />
-                        <Route component={Default} />
                         <Redirect to="/home" />
                     </Switch>
                 </CartContext.Provider>

@@ -8,11 +8,13 @@ import { baseUrl } from '../shared/baseUrl';
 
 function RenderMenuItem({ arrival }) {
   return (
-    <div className="card">
+    <div className="border-none arrival">
       <div className="card-body">
         <Link to={`/arrivals/${arrival.id}`}>
           <div className="card-img">
-            <i className="fal fa-shopping-bag float-right mt-2 mr-3"></i>
+            <div className="mx-auto">
+              <i className="fal ml-4 fa-shopping-bag text-black"></i>
+            </div>
             <img src={baseUrl + arrival.image} className="img-fluid" alt={arrival.title} />
           </div>
           <div className="card-footer bg-white shadow-sm d-flex flex-column align-items-center">
@@ -25,22 +27,12 @@ function RenderMenuItem({ arrival }) {
               <i className="fa fa-star star"></i>
               <i className="fa fa-star star"></i>
             </div>
-            <h6 className="mb-0 text-black">${arrival.price}</h6>
+            <div className="d-flex">
+              <h6 className="mb-0 text-black">${arrival.price}</h6>
+              <h6 className="mb-0 oldPrice px-3">${arrival.oldPrice}</h6>
+            </div>
           </div>
         </Link>
-      </div>
-    </div>
-  )
-}
-
-function RenderCategoryItem({ category }) {
-  return (
-    <div>
-      <div className="card">
-        <div className="categoryCard">
-          <Link to="/shop"><img src={baseUrl + category.image} alt="" /></Link>
-          <button className="btn rounded-0 py-4 font-weight-bold px-1"><span className="title">{category.type}</span></button>
-        </div>
       </div>
     </div>
   )
@@ -49,20 +41,12 @@ function RenderCategoryItem({ category }) {
 const Home = (props) => {
   const arrivalMenu = props.arrivals.arrivals.map((arrival) => {
     return (
-      <div className="" key={arrival.id}>
-        <RenderMenuItem arrival={arrival} onClick={props.onClick} />
-      </div>
-    )
-  })
-  const categoryMenu = props.categories.categories.map((category) => {
-    return (
-      <div className="my-1" key={category.id}>
-        <RenderCategoryItem category={category} onClick={props.onClick} />
-      </div>
+        <RenderMenuItem className="item" key={arrival.id} arrival={arrival} onClick={props.onClick} />
     )
   })
 
-  if (props.arrivals.isLoading && props.categories.isLoading) {
+
+  if (props.arrivals.isLoading) {
     return (
       <div className="container">
         <div className="row">
@@ -71,13 +55,12 @@ const Home = (props) => {
       </div>
     );
   }
-  else if (props.arrivals.errMess && props.categories.errMess) {
+  else if (props.arrivals.errMess) {
     return (
       <div className="container">
         <div className="row">
           <div className="col-12">
             <h4>{props.arrivals.errMess}</h4>
-            <h4>{props.categories.errMess}</h4>
           </div>
         </div>
       </div>
@@ -85,17 +68,9 @@ const Home = (props) => {
   }
   else
     return (
-      <div>
+      <div className="arrival">
         <div className="container my-4">
-          <div className="category font-weight-bold d-flex justify-content-center text-black">
-            <i className="fal fa-star"></i>
-            <h6>SHOP BY CATEGORIES</h6>
-            <i className="fal fa-star"></i>
-          </div>
-          <div className="row-cols-3 row mx-auto">
-            {categoryMenu}
-          </div>
-          <NavWrapper className="navbar bg-white navbar-expand-sm px-sm-5 my-3">
+          <NavWrapper className="navbar navbar-expand-sm px-sm-5 my-3">
             <div className="font-weight-bold text-black border-bottom-2"><span className="text-underline"> NEW ARRIVALS </span></div>
             <div className="ml-auto">
               <ul className="navbar-nav align-items-center nav-pills">
@@ -122,6 +97,10 @@ const Home = (props) => {
           </NavWrapper>
           <div className="row-cols-3 row mx-2">
             {arrivalMenu}
+          </div>
+
+          <div class="d-flex my-4 justify-content-center">
+            <button class="all text-white">View all</button>
           </div>
           <div className="d-flex bg">
             <h4 className="text-white font-weight-bold">GET UP TO 50% OFF</h4>

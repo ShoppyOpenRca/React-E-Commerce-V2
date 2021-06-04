@@ -1,10 +1,10 @@
 {
-    "arrivals": [
-        {
+    "arrivals": [{
             "id": 0,
             "title": "Laptops & Notebooks",
             "image": "images/pillover.png",
             "price": 250.99,
+            "oldPrice": 300.99,
             "company": "GOOGLE",
             "inCart": false,
             "count": 0,
@@ -15,6 +15,7 @@
             "title": "Samsung S7",
             "image": "images/bshoe.png",
             "price": 16,
+            "oldPrice": 25,
             "company": "SAMSUNG",
             "inCart": false,
             "count": 0,
@@ -25,6 +26,7 @@
             "title": "HTC 10 - Black",
             "image": "images/hat.png",
             "price": 8,
+            "oldPrice": 10.90,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -33,8 +35,9 @@
         {
             "id": 3,
             "title": "HTC 10 - White",
-            "image": "images/girl.png",
+            "image": "images/pillover.png",
             "price": 18,
+            "oldPrice": 20.60,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -43,8 +46,9 @@
         {
             "id": 4,
             "title": "HTC Desire 626s",
-            "image": "images/hoodle.png",
+            "image": "images/bshoe.png",
             "price": 24,
+            "oldPrice": 30.80,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -53,16 +57,16 @@
         {
             "id": 5,
             "title": "Vintage Iphone",
-            "image": "images/wshirt.png",
+            "image": "images/hat.png",
             "price": 17,
+            "oldPrice": 21.50,
             "company": "apple",
             "inCart": false,
             "count": 0,
             "total": 0
         }
     ],
-    "categories":[
-        {
+    "categories": [{
             "id": 1,
             "image": "images/watch.png",
             "type": "ACCESSORIES"
@@ -93,12 +97,12 @@
             "type": "KIDS"
         }
     ],
-    "products":[
-        {
+    "products": [{
             "id": 0,
             "title": "Google Pixel - Black",
             "image": "images/hat.png",
             "price": 10,
+            "oldPrice": 13.99,
             "company": "GOOGLE",
             "inCart": false,
             "count": 0,
@@ -109,6 +113,7 @@
             "title": "Samsung S7",
             "image": "images/hat.png",
             "price": 16,
+            "oldPrice": 17,
             "company": "SAMSUNG",
             "inCart": false,
             "count": 0,
@@ -119,6 +124,7 @@
             "title": "HTC 10 - Black",
             "image": "images/hat.png",
             "price": 8,
+            "oldPrice": 9,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -129,6 +135,7 @@
             "title": "HTC 10 - White",
             "image": "images/hat.png",
             "price": 18,
+            "oldPrice": 20.99,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -139,6 +146,7 @@
             "title": "HTC Desire 626s",
             "image": "images/hat.png",
             "price": 24,
+            "oldPrice": 25.99,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -149,6 +157,7 @@
             "title": "Vintage Iphone",
             "image": "images/hat.png",
             "price": 17,
+            "oldPrice": 18.99,
             "company": "apple",
             "inCart": false,
             "count": 0,
@@ -159,6 +168,7 @@
             "title": "Google Pixel - Black",
             "image": "images/hat.png",
             "price": 10,
+            "oldPrice": 11,
             "company": "GOOGLE",
             "inCart": false,
             "count": 0,
@@ -169,6 +179,7 @@
             "title": "Samsung S7",
             "image": "images/hat.png",
             "price": 16,
+            "oldPrice": 17,
             "company": "SAMSUNG",
             "inCart": false,
             "count": 0,
@@ -179,6 +190,7 @@
             "title": "HTC 10 - Black",
             "image": "images/hat.png",
             "price": 8,
+            "oldPrice": 9,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -189,6 +201,7 @@
             "title": "HTC 10 - White",
             "image": "images/hat.png",
             "price": 18,
+            "oldPrice": 19,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -199,6 +212,7 @@
             "title": "HTC Desire 626s",
             "image": "images/hat.png",
             "price": 24,
+            "oldPrice": 25,
             "company": "htc",
             "inCart": false,
             "count": 0,
@@ -209,6 +223,7 @@
             "title": "Vintage Iphone",
             "image": "images/hat.png",
             "price": 17,
+            "oldPrice": 18,
             "company": "apple",
             "inCart": false,
             "count": 0,
