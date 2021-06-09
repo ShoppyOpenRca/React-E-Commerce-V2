@@ -12,10 +12,10 @@ function RenderMenuItem({ arrival }) {
       <div className="card-body">
         <Link to={`/arrivals/${arrival.id}`}>
           <div className="card-img">
-            <div className="mx-auto">
-              <i className="fal ml-4 fa-shopping-bag text-black"></i>
-            </div>
-            <img src={baseUrl + arrival.image} className="img-fluid" alt={arrival.title} />
+            {/* <div className="mx-auto"> */}
+              <i className="fal fa-shopping-bag text-black"></i>
+            {/* </div> */}
+            <img src={baseUrl + arrival.image} className="img-fluid w-100 h-auto" alt={arrival.title} />
           </div>
           <div className="card-footer bg-white shadow-sm d-flex flex-column align-items-center">
             <div className="mb-0 text-black">
@@ -41,7 +41,7 @@ function RenderMenuItem({ arrival }) {
 const Home = (props) => {
   const arrivalMenu = props.arrivals.arrivals.map((arrival) => {
     return (
-        <RenderMenuItem className="item" key={arrival.id} arrival={arrival} onClick={props.onClick} />
+      <RenderMenuItem className="item col" key={arrival.id} arrival={arrival} onClick={props.onClick} />
     )
   })
 
@@ -95,7 +95,7 @@ const Home = (props) => {
               </ul>
             </div>
           </NavWrapper>
-          <div className="row-cols-3 row mx-2">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-2">
             {arrivalMenu}
           </div>
 
@@ -107,33 +107,33 @@ const Home = (props) => {
             <img src="img/off.png" className="w-25 h-25 img-fluid" alt="" />
           </div>
           <h5 className="font-weight-bold text-center pb-4">Blog</h5>
-          <div className="row row-cols-3 mx-2">
-            <div className="">
+          <div className="row mx-2">
+            <div className="col-sm">
               <button className="btn rounded-0 px-1 py-4 bg-black">
                 <p>07</p>
                 <p>MAR</p>
               </button>
-              <img src="/img/blog1.png" alt="" />
+              <img className="w-100 h-auto" src="/img/blog1.png" alt="" />
               <h6>The Disco Collar on the Street</h6>
               <p>Typography is the work of typesetters, compositors, typographers, graphic designers, art directors,</p>
               <Link Link to="">Read more</Link>
             </div>
-            <div className="">
+            <div className="col-sm">
               <button className="btn rounded-0 px-1 py-4 bg-black">
                 <p>07</p>
                 <p>MAR</p>
               </button>
-              <img src="/img/blog2.png" alt="" />
+              <img className="w-100 h-auto" src="/img/blog2.png" alt="" />
               <h6>The Disco Collar on the Street</h6>
               <p>Typography is the work of typesetters, compositors, typographers, graphic designers, art directors,</p>
               <Link Link to="">Read more</Link>
             </div>
-            <div className="">
+            <div className="col-sm">
               <button className="btn rounded-0 px-1 py-4 bg-black">
                 <p>07</p>
                 <p>MAR</p>
               </button>
-              <img src="/img/blog3.png" alt="" />
+              <img className="w-100 h-auto" src="/img/blog3.png" alt="" />
               <h6>The Disco Collar on the Street</h6>
               <p>Typography is the work of typesetters, compositors, typographers, graphic designers, art directors,</p>
               <Link Link to="">Read more</Link>

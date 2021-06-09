@@ -35,8 +35,8 @@ const Footer = () => {
                         <small><p className="pl-4">Send us your query anytime!</p></small>
                     </div>
                 </div>
-                <div className="row icon">
-                    <div className="col-lg-12 col-md-12 col-sm-12 text-center  fa-stack">
+                <div className="row icon ml-auto">
+                    <div className="col-lg-12 col-md-12 col-sm-12 text-center d-flex fa-stack">
                         <a href="https://www.instagram.com/igiranezahonorine7/"><i className="fab fa-instagram pl-5 social-info one"></i></a>
                         <a href="https://twitter.com/igiranezahonor2"><i className="fab fa-twitter pl-3 social-info one"></i></a>
                         <a href="https://www.facebook.com/igiranezAbijah"><i className="fab fa-facebook-f pl-3 social-info one"></i></a>
