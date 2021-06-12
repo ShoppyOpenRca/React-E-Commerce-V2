@@ -10,8 +10,10 @@ import { fetchArrivals, fetchProducts, fetchCategories } from '../redux/ActionCr
 import ProductList from './ProductList';
 import Cart from '../Cart/Cart';
 import CartContext from '../context/cartContext';
+import Discount from './discount';
 import About from './about';
 import Contact from './contact';
+// import Contact from './contact';
 
 const mapStateToProps = state => {
     return {
@@ -63,9 +65,11 @@ class Main extends Component {
                         <Route path='/home' component={HomePage} />
                         <Route exact path="/shop" component={ProductList} />
                         <Route exact path="/about" component={About} />
+                        {/* <Route exact path="/contact" component={Contact} /> */}
                         <Route exact path="/contact" component={Contact} />
                         <Route path="/details" component={Details} />
                         <Route path="/cart" component={Cart} />
+                        <Route path="/discount" component={Discount}/>
                         <Redirect to="/home" />
                     </Switch>
                 </CartContext.Provider>

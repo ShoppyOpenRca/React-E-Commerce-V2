@@ -26,6 +26,9 @@ export default class Navbar extends Component {
             <li className="nav-item  pr-4">
               <NavLink to="/contact" className="nav-link">Contact</NavLink>
             </li>
+            <li className="nav-item  pr-4">
+              <NavLink to="/discount" className="nav-link">Discountp</NavLink>
+            </li>
           </ul>
         </div>
         <div className="ml-auto">

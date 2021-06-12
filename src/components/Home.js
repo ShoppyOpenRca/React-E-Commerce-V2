@@ -31,6 +31,7 @@ function RenderMenuItem({ arrival }) {
               <h6 className="mb-0 text-black">${arrival.price}</h6>
               <h6 className="mb-0 oldPrice px-3">${arrival.oldPrice}</h6>
             </div>
+          
           </div>
         </Link>
       </div>
@@ -93,6 +94,8 @@ const Home = (props) => {
                   <Link to="/contact" className="nav-link">Perfume's</Link>
                 </li>
               </ul>
+
+            
             </div>
           </NavWrapper>
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-2">

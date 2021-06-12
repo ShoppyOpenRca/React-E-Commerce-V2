@@ -43,15 +43,16 @@ class Contact extends Component {
           <div className="w-30 col-md-6 ">
             <h4> Get in touch </h4>
             <form>
-              <input type="text" placeholder=" Enter your name" className="input1" />
+              <input type="text" placeholder=" Enter your name" className="input1 mr-3 " />
 
               <input type="text" placeholder="Enter your Email" className="input1" /> <br />
-              <input type="text" placeholder="Enter subject " /><br />
+              <input type="text" placeholder="Enter subject " className="mt-3 mb-3" /><br />
 
               <input type="text"
                 name="textValue"
                 onChange={this.handleChange}
                 placeholder="Enter the message"
+                className="mb-4"
               />
 
               <button>SEND MESSAGE</button>
@@ -64,4 +65,3 @@ class Contact extends Component {
   }
 }
 export default Contact;
-//eslint-disabled-next-line
