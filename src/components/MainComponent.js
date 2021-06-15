@@ -70,7 +70,7 @@ class Main extends Component {
                         <Route path="/details" component={Details} />
                         <Route path="/cart" component={Cart} />
                         <Route path="/discount" component={Discount}/>
-                        <Redirect to="/home" />
+                        <Redirect to="/home"/>
                     </Switch>
                 </CartContext.Provider>
                 <Footer />

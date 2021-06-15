@@ -21,30 +21,38 @@ class Contact extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
-          <img src={contactImg} alt="you can get in touch" marginLeft={0} width="1500" height="300" />
-        </div>
-        <div className="pl-5 mb-4 row">
-          <div className=" col-md-6 ">
+          <div className="mb-5 mt-5" >  
             <h4>Contact Us</h4>
-            <p>
-              As you might expect of a company that began as a high-end interiors contractor,
-                      we pay strict attention</p>
+            <p className="text-center">Contact us for a quote, delivery, help or anything.</p>
+          </div>
+                
+         <div className="pl-5 mb-4 row">
+         
+         <div className="w-30 col-md-6 ">
+          <div>
             <h5>America</h5>
             <p>
-              195 E Parker Square Dr, Parker, CO 801 +43 982-314-0958
-                  </p>
+            195 E Parker Square Dr, Parker, CO 801
+            +43 982-314-0958 </p>
+            </div>
+            <div>
             <h5>France</h5>
+            <p>  109 Avenue Léon, 63 Clermont-Ferrand  +12 345-423-9893 </p>
+            </div>
+
+            <div>
+            <h5>Rwanda</h5>
             <p>
-              109 Avenue Léon, 63 Clermont-Ferrand  +12 345-423-9893
-                  </p>
+            195 E Parker Square Dr, Parker, CO 801
+            +43 982-314-0958 </p>
+            </div>
           </div>
+
 
           <div className="w-30 col-md-6 ">
             <h4> Get in touch </h4>
             <form>
               <input type="text" placeholder=" Enter your name" className="input1 mr-3 " />
-
               <input type="text" placeholder="Enter your Email" className="input1" /> <br />
               <input type="text" placeholder="Enter subject " className="mt-3 mb-3" /><br />
 
@@ -55,10 +63,10 @@ class Contact extends Component {
                 className="mb-4"
               />
 
-              <button>SEND MESSAGE</button>
+              <button className ="ml-5 font-weight-bold">SEND MESSAGE</button>
             </form></div>
-
-        </div>
+</div>
+        
 
         <Mapping />
       </div>);

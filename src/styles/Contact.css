@@ -1,23 +1,29 @@
 input{
     width:80%;
     height: 46px;
-   border: 1px solid #697AD3;
+    border: 1px solid #F1F1F1;
     background: #FAFBFD;
-box-sizing: border-box;
-border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
 
 }
+input :focus {
+    outline: none;
+    box-shadow: none;
+    border:none;
+  }
 .input1{
     width:38%;
 }
 
 button{
-    color:#697AD3;
-    border: 1px solid #697AD3;
+    color:#FFFF;
+    border: 1px solid #FFFF;
     border-radius: 3px;
     width: 30%;
-    background-color: #FAFBFD;
-    height: 66px;
+    background-color: #000;
+    height: 46px;
     padding: 10px;
-    margin-left: 9px;
+    font-size:larger;
+    
 }
