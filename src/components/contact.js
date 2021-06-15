@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 import '../styles/Contact.css';
-
-import contactImg from '../images/Rectangle 106.png'
 import Mapping from './mapp.js'
 
 class Contact extends Component {

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../styles/about.css';
-import aboutBackground from '../images/Rectangle104.png'
-import aboutside from '../images/girlAbout.png'
 import photo from '../images/photo.png'
 
 
