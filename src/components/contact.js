@@ -18,8 +18,8 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="container">
-          <div className="mb-5 mt-5" >  
+      <div className="container pt-8">
+          <div className="mb-4 mt-16" >  
             <h4>Contact Us</h4>
             <p className="text-center">Contact us for a quote, delivery, help or anything.</p>
           </div>

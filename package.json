@@ -1,40 +1,47 @@
 {
-  "name": "react-ecommerce-app",
-  "version": "1.0.0",
-  "description": "An ecommerce app created with the react.js framework and boostrap css.",
-  "keywords": [
-    "react",
-    "bootstrap",
-    "ecommerce"
-  ],
-  "main": "src/index.js",
-  "dependencies": {
-    "bootstrap": "4.4.1",
-    "cross-fetch": "^3.1.4",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-redux": "^7.2.4",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.0.1",
-    "redux": "^4.1.0",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "4.4.1"
-  },
-  "devDependencies": {
-    "json-server": "^0.16.3",
-    "typescript": "3.3.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "name": "react-ecommerce-app",
+    "version": "1.0.0",
+    "description": "An ecommerce app created with the react.js framework and boostrap css.",
+    "keywords": [
+        "react",
+        "bootstrap",
+        "ecommerce"
+    ],
+    "main": "src/index.js",
+    "dependencies": {
+        "@craco/craco": "^6.3.0",
+        "@headlessui/react": "^1.4.1",
+        "@types/react-transition-group": "^4.4.3",
+        "cross-fetch": "^3.1.4",
+        "react": "16.12.0",
+        "react-dom": "16.12.0",
+        "react-redux": "^7.2.4",
+        "react-responsive-modal": "^6.1.0",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "^4.0.3",
+        "redux": "^4.1.0",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "4.4.1"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss7-compat": "^2.2.17",
+        "autoprefixer": "^9.8.8",
+        "json-server": "^0.16.3",
+        "postcss": "^7.0.39",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+        "typescript": "3.3.3"
+    },
+    "scripts": {
+        "start": "craco start --verbose",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "react-scripts eject"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ]
 }

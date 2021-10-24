@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100%;
+}
+
+.no-gutters {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: black;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+input:focus,
+input:focus-within,
+input:focus-visible {
+  outline: none;
+}

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Modal from "./components/Modal";
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';

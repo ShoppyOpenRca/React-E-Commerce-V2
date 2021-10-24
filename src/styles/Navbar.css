@@ -7,7 +7,7 @@
 	color: black;
 }
 
-.navbar {
-	font-family: 'Nunito Sans', sans-serif;
-	color: black !important;
-}
+nav {
+	z-index: 1;
+	scroll-behavior: smooth;
+  }
