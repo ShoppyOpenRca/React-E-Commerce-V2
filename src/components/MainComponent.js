@@ -18,7 +18,7 @@ import About from "./about";
 import Contact from "./contact";
 import RegisterPage from "../Pages/RegisterPage";
 import LoginPage from "../Pages/LoginPage";
-import Discount from "./Discount";
+import Discount from "./discount";
 const mapStateToProps = (state) => {
   return {
     arrivals: state.arrivals,

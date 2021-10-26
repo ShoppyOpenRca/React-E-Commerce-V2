@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../styles/about.css";
+import photob from "../images/boyAbout.png";
 import photo from "../images/photo.png";
+
 
 class About extends Component {
   render() {
@@ -8,16 +10,16 @@ class About extends Component {
       <>
         <div className="container pt-8">
           <div className="mt-16">
-            <h4 className=" font-weight-bolder m-5 text-center">About us</h4>
+            <h4 className=" font-bold m-5 text-center text-3xl">About us</h4>
           </div>
 
-          <div className="row">
-            <div className="col-md-6">
-              <div className="h-50 ">
-                <h3 className="text-center font-weight-bold mx-3 mb-2">
+          <div className="grid grid-rows-2 gap-5 grid-flow-col  md:col-auto sm:col-auto">
+         
+              <div >
+                <h3 className="text-center font-weight-bold ml-1 mr-3 mb-2">
                   Who We Are ?
                 </h3>
-                <p className="mx-5">
+                <p className="ml-32 text-justify width  ">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -30,26 +32,25 @@ class About extends Component {
                   like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
               </div>
-              <div className="mx-5">
-                <img src={photo} alt="big" height="200" width="400" />
-              </div>
-            </div>
+ 
+              {/* <div className="items-center justify-center">
+                
+              </div> */}
 
-            <div className="mt-5 col-md-6">
+<div class='flex items-center justify-center'>
+  <img src={photo} alt="big" height="200" width="400" />
+ 
+</div>
+           
+            
               <div className="mx-5">
-                <img
-                  src={photo}
-                  alt="bigp"
-                  height="200"
-                  width="400"
-                  className="ml-5"
-                />
+                <img src={photo} alt="bigp" height="350" width="400"  className="ml-5"/>
               </div>
-              <div className="h-50  mt-3">
-                <h3 className="text-center font-weight-bold mx-3 mb-2 ">
+              <div className="h-50  ">
+                <h3 className="text-center font-weight-bold ml-0 mr-3 mb-2 ">
                   Why to Choose Us ?
                 </h3>
-                <p className="mx-5">
+                <p className=" ml-5 text-justify width  ">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                   The point of using Lorem Ipsum is that it has a more-or-less
@@ -62,15 +63,57 @@ class About extends Component {
                   sometimes by accident, sometimes on purpose.
                 </p>
               </div>
-            </div>
+            
           </div>
 
-          <div>
-            <h3>Our values</h3>
+          <div >
+            <h1 className="mt-8 ml-8 mb-5 font-bold underline text-2xl">Our values</h1>
 
-            <div className="row">
-              <div className="col-md-4"></div>
-              <div className="col-md-8"></div>
+<div className="grid grid-cols-3 gap-4">
+              <div className="col-span-2">
+                <div className="grid grid-cols-2 gap-4 ml-5 mr-1">
+
+
+                  <div>
+                    <h6 class="ml-12">Transparency</h6>
+                  <p className="w-60 text-justify "> Consectetur adipiscing elit, sued do eiusmod tempor
+                  ididunt udfgt labore et dolore magna aliqua. Quis 
+                  ipsum suspendisces gravida.</p>
+                  </div>
+
+                  <div>
+                  <h6 class="ml-12">Flexibility</h6>
+                  <p className="w-60 text-justify ">
+                    Consectetur adipiscing elit, sued do eiusmod tempor
+                  ididunt udfgt labore et dolore magna aliqua. Quis 
+                  ipsum suspendisces gravida.
+                  </p>
+                  </div>
+
+                  <div>
+                  <h6 class="ml-12">Accuracy</h6>
+                  <p className="w-60 text-justify ">
+                    Consectetur adipiscing elit, sued do eiusmod tempor
+                  ididunt udfgt labore et dolore magna aliqua. Quis 
+                  ipsum suspendisces gravida.
+                  </p>
+                  </div>
+
+                  <div>
+                  <h6 class="ml-12">Quality</h6>
+                  <p className="w-60 text-justify ">
+                    Consectetur adipiscing elit, sued do eiusmod tempor
+                  ididunt udfgt labore et dolore magna aliqua. Quis 
+                  ipsum suspendisces gravida.
+                  </p>
+                  </div>
+
+</div>
+
+              </div>
+              <div>  <img src={photob} alt="boyp"/></div>
+
+
             </div>
           </div>
         </div>
