@@ -69,7 +69,7 @@ class About extends Component {
           <div >
             <h1 className="mt-8 ml-8 mb-5 font-bold underline text-2xl">Our values</h1>
 
-<div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               <div className="col-span-2">
                 <div className="grid grid-cols-2 gap-4 ml-5 mr-1">
 

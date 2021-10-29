@@ -1,4 +1,4 @@
-input{
+/* input{
     width:80%;
     height: 46px;
     border: 1px solid #F1F1F1;
@@ -14,6 +14,13 @@ input :focus {
   }
 .input1{
     width:38%;
+} */
+input{
+    border: 1px solid #F1F1F1;
+}
+
+span input{
+    width: 18.9rem;
 }
 
 button{
