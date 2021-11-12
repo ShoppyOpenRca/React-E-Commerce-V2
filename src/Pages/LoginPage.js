@@ -75,7 +75,7 @@ class LoginPage extends Component {
                 Welcome Back to Shoppy
               </h3>
               <span className="text-white text-sm">
-                Login for more privileges
+                Login for more 
               </span>
             </div>
           </div>
